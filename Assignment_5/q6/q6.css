@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+}
+.animated-header {
+  padding: 50px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+}
+.animated-text {
+  font-size: 2rem;
+  animation: color-change 5s infinite, size-change 5s infinite alternate;
+}
+@keyframes color-change {
+  0% {
+    color: #ff7e5f;
+  }
+  50% {
+    color: #feb47b;
+  }
+  100% {
+    color: #ff7e5f;
+  }
+}
+@keyframes size-change {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+.hover-text {
+  font-size: 1.2rem;
+  color: #ddd;
+  transition: transform 0.3s, color 0.3s;
+}
+.hover-text:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
